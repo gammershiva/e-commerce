@@ -1,5 +1,6 @@
 import React from 'react';
 import { RiArrowDownSFill } from "react-icons/ri";
+import { CiSearch } from "react-icons/ci";
 
 const Navbarlink = [
   { id: 1, name: "Home", link: "#" },
@@ -12,31 +13,31 @@ let Dropdown =[
   {id: 1,name:"trending product",link:"#"},
    {id: 2,name:"best selling",link:"#"},
     {id: 3,name:"top rated",link:"#"},
-
 ];
 
 
 const Navbar = () => {
   return (
-    <header className="bg-white shadow-2xl  ">
-      <div className="p-4 sm:px-12 flex gap-7">
+    <header className="bg-white shadow-2xl flex justify-between pr-11 ">
+      <div className="p-4 sm:px-12 flex items-center gap-7">
+        <div className="flex ">
         <a className="text-red-600 text-2xl sm:text-3xl font-semibold uppercase" href="#">
           E-SHOP
         </a>
-        <nav className='flex '>
+        <nav className='flex items-center '>
           <ul className="flex gap-7">
             {Navbarlink.map((item) => (
-              <li className="px-4 font-semibold text-gray-600 hover:text-black duration-200" key={item.id}>
+              <li className="px-4 font-semibold text-gray-400 hover:text-black duration-200" key={item.id}>
                 <a href={item.link} >
                   {item.name}
                 </a>
               </li>
             ))}
           <li className="group">
-            <a className="flex items-center font-semibold text-gray-600 hover:text-black duration-200 " href="#">Quick link
+            <a className="flex items-center font-semibold text-gray-400 hover:text-black duration-200 " href="#">Quick link
               <RiArrowDownSFill className="group-hover:rotate-180 duration-200 " />
             </a>
-            <div className="hidden group-hover:block absolute  ">
+            <div className="hidden group-hover:block absolute shadow-md p-2 rounded-b-md ">
               {Dropdown.map((i)=>(
                 <ul>
                   <li key={i.id} >
@@ -45,10 +46,21 @@ const Navbar = () => {
                 </ul>
               ))}
             </div>
+            
           </li>
           </ul>
-        </nav>
-      </div>
+          </nav>
+          </div>
+          </div>
+
+          {/* right side */}
+      <div className="flex items-center group relative ">
+            <input className="w-0 group-hover:w-[300px] group-hover:border group-hover:border-gray-100 duration-300 rounded-full px-3 py-1 "
+             placeholder='enter for scr'  type="text" />
+             <CiSearch className="group-hover:text-red-500 text-x1 text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 duration-300" />
+
+          </div>
+         
     </header>
   );
 };
