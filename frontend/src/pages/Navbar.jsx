@@ -1,6 +1,7 @@
 import React from 'react';
 import { RiArrowDownSFill } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
+import { FaOpencart } from "react-icons/fa";
 
 const Navbarlink = [
   { id: 1, name: "Home", link: "#" },
@@ -54,11 +55,16 @@ const Navbar = () => {
           </div>
 
           {/* right side */}
-      <div className="flex items-center group relative ">
+      <div className="flex items-center group relative gap-7 ">
+        <div className="">
             <input className="w-0 group-hover:w-[300px] group-hover:border group-hover:border-gray-100 duration-300 rounded-full px-3 py-1 "
              placeholder='enter for scr'  type="text" />
-             <CiSearch className="group-hover:text-red-500 text-x1 text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 duration-300" />
-
+             <CiSearch className=" mr-11 group-hover:text-red-500 text-x1 text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 duration-300" />
+        </div>
+        <div className='relative p-3'>
+          <FaOpencart />
+          <span className='text-white bg-red-700 rounded-full absolute top-0 right-0 flex items-center justify-center text-xs w-4 h-4'>4</span>
+        </div>
           </div>
          
     </header>
