@@ -57,9 +57,9 @@ const Navbar = () => {
           {/* right side */}
       <div className="flex items-center group relative gap-7 ">
         <div className="">
-            <input className="w-0 group-hover:w-[300px] group-hover:border group-hover:border-gray-100 duration-300 rounded-full px-3 py-1 "
-             placeholder='enter for scr'  type="text" />
-             <CiSearch className=" mr-11 group-hover:text-red-500 text-x1 text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 duration-300" />
+            <input className="w-0 group-hover:w-[300px] group-hover:border group-hover:border-gray-100 duration-300 rounded-full px-4 py-1 "
+             placeholder='enter for scr'  type="search" />
+             <CiSearch className=" mr-15 group-hover:text-red-500 text-x1 text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 duration-300" />
         </div>
         <div className='relative p-3'>
           <FaOpencart />
