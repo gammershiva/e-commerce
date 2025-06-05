@@ -50,7 +50,8 @@ const Hero = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    button:true
   };
   return (
     <div className='p-10 sm:p-10 '>
