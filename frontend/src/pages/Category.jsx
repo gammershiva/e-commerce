@@ -15,7 +15,7 @@ const Category = () => {
                 <div className='mt-16 '>
                 <p className='mb-[2px] text-gray-400'>Enjoy </p>
                 <p className='text-2xl font-semibold mb-[2px]'>with</p>
-                <p className='text-4xl font-bold opacity-20 mb-2'>Earphone</p>
+                <p className='text-4xl font-bold opacity-20 mb-2'>Headphone</p>
                 </div>
                 <Button
                 text="Buy now"
@@ -43,7 +43,7 @@ const Category = () => {
                 <div className='mt-16 '>
                 <p className='mb-[2px] text-gray-400 text-2xl'>Enjoy </p>
                 <p className='text-5xl font-semibold mb-[2px]'>with</p>
-                <p className='text-6xl font-bold opacity-20 mb-2'>Earphone</p>
+                <p className='text-6xl font-bold opacity-20 mb-2'>Mackbook</p>
                 </div>
                 <Button
                 text="Buy now"

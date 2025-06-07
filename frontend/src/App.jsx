@@ -5,6 +5,8 @@ import Hero from "./pages/Hero";
 import Navbar from "./pages/Navbar";
 import Services from "./pages/Services";
 import headphone from "./assets/catogory img/headphone.png"
+import watch from "./assets/catogory img/swatch.png"
+import Banner2 from "./pages/Banner2";
 
 
 const Bannerdata={
@@ -19,6 +21,18 @@ const Bannerdata={
   
 
 }
+const Bannerdata2={
+  discount:"40% OFF",
+  title:"Fine Smile",
+  date:"10 jan to 28 jan",
+  image: watch,
+  title2:"Smart Watch",
+  title3:"Winter sale",
+  title:"Circuit board,soldering,using a multimeter or oscilloscope",
+  className:"bg-green-500"
+  
+
+}
 
 let App =()=>{
   return(
@@ -29,6 +43,7 @@ let App =()=>{
     <Category2/>
     <Services/>
     <Banner data={Bannerdata}/>
+    <Banner2 data={Bannerdata2}/>
     </>
   )
 }

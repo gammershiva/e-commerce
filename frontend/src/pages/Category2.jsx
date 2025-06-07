@@ -16,7 +16,7 @@ const Category = () => {
                 <div className='mt-16 '>
                 <p className='mb-[2px] text-gray-400 text-2xl'>Enjoy </p>
                 <p className='text-5xl font-semibold mb-[2px]'>with</p>
-                <p className='text-6xl font-bold opacity-20 mb-2'>Earphone</p>
+                <p className='text-6xl font-bold opacity-20 mb-2'>Ps4</p>
                 </div>
                 <Button
                 text="Buy now"
@@ -30,13 +30,13 @@ const Category = () => {
                 <div className='mt-16 '>
                 <p className='mb-[2px] text-gray-400'>Enjoy </p>
                 <p className='text-2xl font-semibold mb-[2px]'>with</p>
-                <p className='text-4xl font-bold opacity-20 mb-2'>Earphone</p>
+                <p className='text-4xl font-bold opacity-20 mb-2'>Smart <span>Watch</span> </p>
                 </div>
                 <Button
                 text="Buy now"
                 className="hover:bg-gray-500 absolute bg-transparent "
                 />
-                <img src={img1} alt="" className='h-[200px] w-[200px] absolute left-30 bottom-30 '/>
+                <img src={img1} alt="" className='h-[200px] w-[200px] absolute left-40 bottom-10 '/>
                 
             </div>
             {/* secound card */}
@@ -44,13 +44,13 @@ const Category = () => {
                 <div className='mt-16 '>
                 <p className='mb-[2px] text-gray-400'>Enjoy </p>
                 <p className='text-2xl font-semibold mb-[2px]'>with</p>
-                <p className='text-4xl font-bold opacity-20 mb-2'>Earphone</p>
+                <p className='text-4xl font-bold opacity-20 mb-2'>Watch</p>
                 </div>
                 <Button
                 text="Buy now"
                 className="hover:bg-gray-500 absolute bg-transparent "
                 />
-                <img src={img2} alt="" className='h-[200px] w-[200px] absolute left-30 bottom-30 '/>
+                <img src={img2} alt="" className='h-[200px] w-[200px] absolute left-40 bottom-10 '/>
                 
             </div>
           
