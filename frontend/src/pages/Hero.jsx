@@ -35,7 +35,7 @@ let Herodata=[
  id:3,
   img: image3,
   title:"Wireless",
-  subtitle:"dublicate VR",
+  subtitle:"Dublicate VR",
   title23:"VR",
   description:"this is best duplicate item"
 
