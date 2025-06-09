@@ -8,6 +8,7 @@ import headphone from "./assets/catogory img/headphone.png"
 import watch from "./assets/catogory img/swatch.png"
 import Banner2 from "./pages/Banner2";
 import Products from "./pages/Products";
+import Blog from "./pages/Blog";
 
 
 const Bannerdata={
@@ -44,8 +45,9 @@ let App =()=>{
     <Category2/>
     <Services/>
     <Banner data={Bannerdata}/>
-    {/* <Banner2 data={Bannerdata2}/> */}
     <Products/>
+    <Banner2 data={Bannerdata2}/>
+    <Blog/>
     </>
   )
 }

@@ -11,10 +11,10 @@ const Productcard = ({data}) => {
             <div className='rounded-3xl'>
            <img className='rounded-3xl h-[180px] w-[300px] object-cover ' src={i.image} alt="eror" />
 
-          <div className='absolute top-20 translate-x-1/3 hidden group-hover:flex duration-200 justify-center'> 
+          <div className='absolute top-20 translate-x-1/2 hidden group-hover:flex duration-200 justify-center'> 
           <Button
            text="Add to cart"
-           className="bg-red-500 text-white"
+           className="bg-gray-400 text-white"
            />
            </div>
             </div>

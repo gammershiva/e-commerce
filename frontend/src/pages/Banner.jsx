@@ -24,7 +24,7 @@ const Banner = ({data}) => {
             <p className='text-3xl sm:text-5xl font-semibold'>{data.title3}</p>
             <p className='text-sm'>{data.title4}</p>
           <div>
-            <Button text="Shop now " className="bg-white text-red-600" />
+            <Button text="Shop now " className={`${data.className} bg-white text-red-600`} />
           </div>
           </div>
      </div>
