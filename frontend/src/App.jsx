@@ -9,45 +9,49 @@ import watch from "./assets/catogory img/swatch.png"
 import Banner2 from "./pages/Banner2";
 import Products from "./pages/Products";
 import Blog from "./pages/Blog";
+import Sponcer from "./Sponcer/Sponcer";
+import Footer from "./pages/footer/Footer";
 
 
-const Bannerdata={
-  discount:"30% OFF",
-  title:"Fine Smile",
-  date:"10 jan to 28 jan",
+const Bannerdata = {
+  discount: "30% OFF",
+  title: "Fine Smile",
+  date: "10 jan to 28 jan",
   image: headphone,
-  title2:"Air solo bass",
-  title3:"Winter sale",
-  title:"Circuit board,soldering,using a multimeter or oscilloscope",
-  className:"bg-red-500"
-  
+  title2: "Air solo bass",
+  title3: "Winter sale",
+  title: "Circuit board,soldering,using a multimeter or oscilloscope",
+  className: "bg-red-500"
+
 
 }
-const Bannerdata2={
-  discount:"40% OFF",
-  title:"Fine Smile",
-  date:"10 jan to 28 jan",
+const Bannerdata2 = {
+  discount: "40% OFF",
+  title: "Fine Smile",
+  date: "10 jan to 28 jan",
   image: watch,
-  title2:"Smart Watch",
-  title3:"Winter sale",
-  title:"Circuit board,soldering,using a multimeter or oscilloscope",
-  className:"bg-green-500"
-  
+  title2: "Smart Watch",
+  title3: "Winter sale",
+  title: "Circuit board,soldering,using a multimeter or oscilloscope",
+  className: "bg-green-500"
+
 
 }
 
-let App =()=>{
-  return(
+let App = () => {
+  return (
     <>
-    <Navbar/>
-    <Hero/>
-    <Category/>
-    <Category2/>
-    <Services/>
-    <Banner data={Bannerdata}/>
-    <Products/>
-    <Banner2 data={Bannerdata2}/>
-    <Blog/>
+      <Navbar />
+      <Hero />
+      <Category />
+      <Category2 />
+      <Services />
+      <Banner data={Bannerdata} />
+      <Products />
+      <Banner2 data={Bannerdata2} />
+      <Blog />
+      <Sponcer />
+      <Footer/>
     </>
   )
 }
