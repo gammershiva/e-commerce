@@ -36,7 +36,7 @@ const Category = () => {
                 text="Buy now"
                 className="hover:bg-gray-500 absolute bg-transparent "
                 />
-                <img src={img1} alt="" className='h-[200px] w-[200px] absolute left-40 bottom-10 '/>
+                <img src={img1} alt="" className='h-[200px] w-[200px] absolute left-40  bottom-10 '/>
                 
             </div>
             {/* secound card */}

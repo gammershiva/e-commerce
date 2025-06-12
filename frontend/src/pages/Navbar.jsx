@@ -25,7 +25,7 @@ const Navbar = () => {
         <a className="text-red-600 text-2xl sm:text-3xl font-semibold uppercase" href="#">
           E-SHOP
         </a>
-        <nav className='flex items-center '>
+        <nav className=' items-center  hidden lg:block '>
           <ul className="flex gap-7">
             {Navbarlink.map((item) => (
               <li className="px-4 font-semibold text-gray-400 hover:text-black duration-200" key={item.id}>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-          <li className="group">
+          <li className="group ">
             <a className="flex items-center font-semibold text-gray-400 hover:text-black duration-200 " href="#">Quick link
               <RiArrowDownSFill className="group-hover:rotate-180 duration-200 " />
             </a>
