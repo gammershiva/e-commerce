@@ -30,7 +30,7 @@ const footerlink = [
 
 const Footer = () => {
     return (
-        <div className='p-10 m-10  shadow-2xl shadow-gray-500 bg-gray-400 '>
+        <div className='p-10 mt-13  shadow-2xl shadow-gray-500 bg-gray-400 w-full'>
             {/* main div for grid  */}
             <div className='grid grid-cols-4 gap-3'>
                 {/* company info */}

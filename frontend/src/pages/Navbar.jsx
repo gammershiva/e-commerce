@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RiArrowDownSFill } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import { FaOpencart } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const Navbarlink = [
   { id: 1, name: "Home", link: "#" },
@@ -18,6 +20,7 @@ let Dropdown =[
 
 
 const Navbar = () => {
+  const [sidebaropen, setsidebaropen]= useState(false);
   return (
     <header className="bg-white shadow-2xl flex justify-between pr-11 ">
       <div className="p-4 sm:px-12 flex items-center gap-7">
@@ -66,7 +69,54 @@ const Navbar = () => {
           <span className='text-white bg-red-700 rounded-full absolute top-0 right-0 flex items-center justify-center text-xs w-4 h-4'>4</span>
         </div>
           </div>
-         
+
+
+          {/* mobile side button */}
+
+          <div className='block lg:hidden'>
+            <button onClick ={()=> setsidebaropen(true)}>
+              <FaBars className='text-2xl text-red-700' />
+
+            </button>
+
+            
+          </div>
+            {/* mobile side bar */}
+             <div
+            className={`fixed top-0 left-0 h-full w-64 bg-white shadow trwnsform transition-transform duration-300 z-50 
+              ${ sidebaropen ? "translate-x-0": "-translate-x-full" } `}
+              >
+
+            
+         {/* mobile sidbar header */}
+         <div className='flex justify-between items-center p-4 border-b'>
+          <h2 className='text-lg  font-semibold'>Menu</h2>
+          <button onClick={()=> setsidebaropen(false)}>
+                  <FaTimes className='text-xl' />
+          </button>
+         </div>
+
+         {/* menu item */}
+
+         <ul className='p-4 space-y-3'>
+          {Navbarlink.map((i)=>(
+            <li key={i.id}>
+              <a className='block text-gray-700 hover:text-red-500' href={i.link}>{i.name}</a>
+            </li>
+          ))}
+
+          {/* divider title */}
+          <h1 className='mt-4 font-semibold text-gray-600'>Ouick links</h1>
+
+          {Dropdown.map((i)=>(
+            <li key={i.id}>
+              <a className='' href={i.link}>{i.name}</a>
+
+            </li>
+          ))}
+
+         </ul>
+         </div>
     </header>
   );
 };

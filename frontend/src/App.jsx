@@ -11,6 +11,8 @@ import Products from "./pages/Products";
 import Blog from "./pages/Blog";
 import Sponcer from "./Sponcer/Sponcer";
 import Footer from "./pages/footer/Footer";
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import LoginForm from "./pages/login form/LoginForm";
 
 
 const Bannerdata = {
@@ -38,10 +40,11 @@ const Bannerdata2 = {
 
 }
 
-let App = () => {
-  return (
-    <>
-      <Navbar />
+
+const Home =()=>{
+  return(
+  <div>
+   
       <Hero />
       <Category />
       <Category2 />
@@ -51,8 +54,26 @@ let App = () => {
       <Banner2 data={Bannerdata2} />
       <Blog />
       <Sponcer />
+      
+  </div>
+      )
+}  
+
+let App = () => {
+  return (
+   <div>
+    
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/login" element={<LoginForm/>}/>
+        
+        
+      </Routes>
       <Footer/>
-    </>
+    </Router>
+   </div>
   )
 }
 
