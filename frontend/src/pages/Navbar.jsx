@@ -13,9 +13,9 @@ const Navbarlink = [
 ];
 
 let Dropdown =[
-  {id: 1,name:"trending product",link:"#"},
-   {id: 2,name:"best selling",link:"#"},
-    {id: 3,name:"top rated",link:"#"},
+  {id: 1,name:"trending product",link:"/Trending"},
+   {id: 2,name:"best selling",link:"/best selling"},
+    {id: 3,name:"top rated",link:"/top rated"},
 ];
 
 

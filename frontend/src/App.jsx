@@ -13,6 +13,7 @@ import Sponcer from "./Sponcer/Sponcer";
 import Footer from "./pages/footer/Footer";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import LoginForm from "./pages/login form/LoginForm";
+import Trendingproducts from "./pages/routes/Trendingproducts";
 
 
 const Bannerdata = {
@@ -68,6 +69,7 @@ let App = () => {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<LoginForm/>}/>
+        <Route path="/Trending" element={<Trendingproducts/>}/>
         
         
       </Routes>
