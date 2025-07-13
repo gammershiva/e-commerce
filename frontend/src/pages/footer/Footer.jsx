@@ -40,7 +40,7 @@ const Footer = () => {
 
                     </div>
                     <div className='p-3'>
-                        <p>Lorem ipsum dolor sit, amet consectetur aenetur soluta.</p>
+                        <p>Develop by Shiava Bhattarai</p>
                         <p>Made with love with coding journey</p>
                     </div>
                     <div>
@@ -85,7 +85,7 @@ const Footer = () => {
                     <div className='p-2'>
                         <div className='flex items-center'>
                             <BsCursorFill className=' ' />
-                            <p className='text-semibold '>Noida,Uttar Pardesh</p>
+                            <p className='text-semibold '>kohalpur-11, Banke</p>
                         </div>
                         <div className='flex items-center '>
                             <FaMobileRetro />
